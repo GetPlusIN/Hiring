@@ -55,3 +55,5 @@ The application should have the following features:
 3. Error Handling: The app should properly handle potential issues, like a failed request or receiving unexpected data.
 4. Testing: The application should include a robust suite of tests.
 5. Documentation: The README should accurately explain how to run the project, and the code should include comments where necessary.
+
+#### You can send us the assignment on aniket[at]getplus.in or aadi[at]getplus.in 
