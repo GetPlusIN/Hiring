@@ -1,7 +1,3 @@
-Thank you for your time over call. Here's the assignment we talked about. Requesting you to please finish this up by Monday EOD. In case of any confusion feel free to take any assumptions but do describe them in README.md
-
-
-
 #### Assignment: Restaurant Finder App
 
 **Objective:**
