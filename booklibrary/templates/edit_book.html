@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <h1>Edit Book</h1>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ form.title.id_for_label }}">Title</label>
+            <input type="text" class="form-control" id="{{ form.title.id_for_label }}" name="{{ form.title.name}}"
+                placeholder="Title" value="{{book.title}}">
+        </div>
+        <div class="form-group">
+            <label for="{{ form.author.id_for_label }}">Author</label>
+            <input type="text" class="form-control" id="{{ form.author.id_for_label }}" name="{{ form.author.name }}"
+                placeholder="Author" value="{{book.author}}">
+        </div>
+        <div class="form-group">
+            <label for="{{ form.published_date.id_for_label }}">Published Date</label>
+            <input type="text" class="form-control" id="{{ form.published_date.id_for_label }}"
+                name="{{ form.published_date.name}}" value="{{book.published_date|date:"Y-m-d"}}">
+        </div>
+        <div class="form-group">
+            <label for="{{ form.description.id_for_label }}">Description</label>
+            <input type="text" class="form-control" id="{{ form.description.id_for_label }}"
+                name="{{ form.description.name }}" placeholder="Description" value="{{book.description}}">
+        </div>
+        <button type="submit" class="btn btn-primary">Update Book</button>
+    </form>
+    <a href="{% url 'homepage' %}">Back to homepage</a>
+</div>
+{% endblock %}
+
+
+<!-- 
+<div class="container">
+        <h1>Edit Book</h1>
+     <form method="post" class="mt-4">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ form.title.id_for_label }}">Title:</label>
+            {{ form.title }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.author.id_for_label }}">Author:</label>
+            {{ form.author }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.published_date.id_for_label }}">Published Date:</label>
+            {{ form.published_date }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.description.id_for_label }}">Description:</label>
+            {{ form.description }}
+        </div>
+        <button type="submit" class="btn btn-primary">Update Book</button>
+    </form>
+    <a href="{% url 'homepage' %}">Back to homepage</a>
+</div> -->
+    
+

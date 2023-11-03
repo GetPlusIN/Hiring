@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details</title>
+</head>
+<body>
+    <h1>Book Details</h1>
+    <p>Title: {{ book.title }}</p>
+    <p>Author: {{ book.author }}</p>
+    <p>Published: {{ book.published_date }}</p>
+    <p>Desciption: {{book.description}}</p>
+    <a href="{% url 'homepage' %}"> return to homepage</a>
+</body>
+</html>
